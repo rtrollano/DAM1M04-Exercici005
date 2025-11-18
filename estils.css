@@ -1,0 +1,52 @@
+.tar1 {
+    background-color: red;
+    width: 20%;
+    height: 30%;
+    display: block;
+    color: white;
+    text-align: center;
+
+}
+.tar1:hover {
+    background-color: orange;
+    transition: ease 2s;
+    border-radius: 40%;
+    transform: translate(50%);
+
+}
+
+.tar2 {
+    background-color: blue;
+    width: 20%;
+    height: 20%;
+    display: block;
+    color: white;
+    text-align: center;
+
+}
+.tar2:hover {
+    background-color: cyan;
+    transition: ease 1s;
+    border-radius: 40%;
+    transform: translate(50%);
+    color: black;
+
+}
+
+.tar3 {
+    background-color: green;
+    width: 20%;
+    height: 20%;
+    display: block;
+    color: white;
+    text-align: center;
+
+}
+.tar3:hover {
+    background-color: yellowgreen;
+    color: black;
+    transition: ease 3s;
+    border-radius: 40%;
+    transform: translate(50%);
+
+}
