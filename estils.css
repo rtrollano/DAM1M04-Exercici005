@@ -1,64 +1,3 @@
-h2 {
-    margin: 5%;
-  font-family: "Edu VIC WA NT Hand Pre", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  
-}
-
-.tars {
-    display: flex;
-    flex-direction:row;
-    gap: 5%;
-    margin: 5%
-
-}
-
-.tar1 {
-    background-color: red;
-    width: 20%;
-    height: 30%;
-    display: block;
-    color: white;
-    text-align: center;
-
-}
-.tar1:hover {
-    transition: ease-out 2s;
-    border-radius: 0%;
-    transform: scale3d(1.3, 1.3, 1);
-}
-
-.tar2 {
-    background-color: blue;
-    width: 20%;
-    height: 20%;
-    display: block;
-    color: white;
-    text-align: center;
-
-}
-.tar2:hover {
-    transition: ease 1s;
-    box-shadow: 0px 10px 18px rgba(133, 29, 165, 0.8);
-
-}
-
-.tar3 {
-    background-color: green;
-    width: 20%;
-    height: 20%;
-    display: block;
-    color: white;
-    text-align: center;
-
-}
-.tar3:hover {
-    background-color: yellowgreen;
-    color: black;
-    transition: ease-in-out 0.8s;
-}
-
 .hero {
   font-family: "Bungee Spice", sans-serif;
   font-weight: 400;
@@ -75,27 +14,6 @@ h2 {
   'opsz' 24
 }
 
-/* === Botones === */
-.boton,
-.boton_now1 {
-  font-weight: 500;
-  padding: 8px 10px;
-  border-radius: 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.boton {
-  background-color: #ff4169;
-  color: azure;
-}
-
-.boton:hover {
-  background-color: #ff416acc;
-}
-
-/* === Navegación principal === */
 .topnav {
   display: flex;
   position: sticky;
@@ -107,10 +25,11 @@ h2 {
   justify-content: space-between;
   gap: 16px;
   padding: 0 20px;
-  backdrop-filter: blur(10px) saturate(140%);
-  background-color: rgba(255, 255, 255, 0.8);
-}
+  backdrop-filter: blur(10px) saturate(40%);
+  background-color: salmon;
+  border-radius: 15px;
 
+}
 
 .topnav .menu {
   display: flex;
@@ -134,5 +53,104 @@ h2 {
 
 }
 .colormenu:hover {
-  color:grey;
+  color:white;
+  letter-spacing: 3px;
+  box-shadow: 10px 10px 10px black;
 }
+
+
+h2 {
+    margin: 5%;
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+
+.tars {
+    display: flex;
+    flex-direction:row;
+    gap: 5%;
+    margin: 5%
+
+}
+
+.tar1 {
+    background-color: red;
+    width: 20%;
+    height: 30%;
+    display: block;
+    color: white;
+    text-align: center;
+    transition: linear 1.5s;
+
+}
+.tar1:hover {
+    transition: linear 1.5s;
+    transform: scale3d(1.3, 1.3, 1);
+}
+
+.tar2 {
+    background-color: blue;
+    width: 20%;
+    height: 20%;
+    display: block;
+    color: white;
+    text-align: center;
+    transition: ease-in 1s;
+
+}
+.tar2:hover {
+    transition: ease 0.8s;
+    box-shadow: 0px 10px 18px rgba(133, 29, 165, 0.8);
+
+}
+
+.tar3 {
+    background-color: green;
+    width: 20%;
+    height: 20%;
+    display: block;
+    color: white;
+    text-align: center;
+    transition: ease-out 1.5s;
+
+}
+.tar3:hover {
+    background-color: yellowgreen;
+    color: black;
+    transition: ease-in-out 0.8s;
+}
+
+.foto {
+  width: 35%;
+  height: 35%;
+  transition: transform 2s ease-in-out 0.4s;
+
+}
+
+.foto:hover {
+  
+  transition: transform 1.8s ease-in-out 0.1s;
+  transform: translateX(70%) translateY(50%);
+
+}
+
+@media (min-width: 768px) {
+  body {
+    margin: 0%;
+  }
+  .topnav {
+    max-width: 1264px;
+    margin: auto;
+    text-align: center;
+  }
+}
+
+
+/* === Adaptación móvil === */
+@media (max-width: 768px) {
+  body {
+    margin: 2%;
+  }
+
