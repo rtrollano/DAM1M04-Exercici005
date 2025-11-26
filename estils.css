@@ -13,6 +13,13 @@
   'GRAD' 0,
   'opsz' 24
 }
+h3 {
+  font-family: "Edu VIC WA NT Hand Pre", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 
 .topnav {
   display: flex;
@@ -209,6 +216,44 @@ h2 {
     background: blue; 
   }
 }
+.cuad1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+  animation: girar 3s linear infinite ;
+  border: 3px solid black;
+
+}
+@keyframes derecha {
+  from { 
+    transform: translateX(0) rotate(0deg); 
+  }
+  to { 
+    transform: translateX(calc(min(90vw, 800px) - var(--box))) rotate(360deg); 
+  }
+}
+
+@keyframes izquierda {
+  from { 
+    transform: translateX(0) rotate(0deg); 
+  }
+  to { 
+    transform: translateX(calc(-1 * (min(90vw, 800px) - var(--box)))) rotate(-360deg); 
+  }
+}
+/* SCROLL-DRIVEN ANIMATIONS (Safari 26+, Chrome 115+) */
+@supports (animation-timeline: view()) {
+  .cuad1 {
+    animation: derecha linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+  }
+
+  .cuad2 {
+    animation: izquierda linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 100%;
+  }
 
 /*Guia estilos*/
 
