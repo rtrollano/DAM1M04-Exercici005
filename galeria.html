@@ -12,17 +12,29 @@
 </head>
 <body>
 <!--
+Pàgina 2 — “Animacions” (galeria.html)
+Objectiu: practicar @keyframes i variacions (direcció, delay, iteracions).
 
+Contingut mínim:
+
+Loader pur CSS (rotació, pulse o bounce).
+Peça animada principal: un bloc que combini transform + opacity + canvis de color en una seqüència de fotogrames (ex. bounceAndSpin).
+Scroll-reveal: 2–3 blocs que apareguin amb desplaçament fent servir animation-timeline: view() i animation-range.
+Fallback obligatori: @supports not (animation-timeline: view()) → aplica una animació o estat alternatiu.
+Control de repeticions: almenys una animació amb alternate i una amb infinite.
 
 -->
 <h1 class="hero">Animaciones - RTL</h1>
-<nav class="topnav">
-        
+<nav class="topnav">        
         <div class="menu">
             <a href="index.html" class="colormenu">Indice</a>
             <a href="galeria.html" class="colormenu">Galeria</a>
             <a href="guia-estil.html" class="colormenu">Guia estilo</a>
         </div>
-    </nav>
+</nav>
+    <section class="espacio">
+        <div class="forma transform"></div>
+        <div class="cuadro"></div>
+    </section>
 </body>
 </html>
