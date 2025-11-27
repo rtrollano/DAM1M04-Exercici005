@@ -5,6 +5,11 @@
   text-align: center;
 }
 
+.autocenter {
+  max-width: 1264px;
+  margin: auto;
+  text-align: center;
+}
 
 .material-symbols-outlined {
   font-variation-settings:
@@ -29,9 +34,9 @@ h3 {
   height: 65px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  padding: 0 20px;
+  justify-content: center;
+  gap: 60%;
+  padding: 0 10px;
   backdrop-filter: blur(10px) saturate(40%);
   background-color: salmon;
   border-radius: 15px;
@@ -76,11 +81,12 @@ h2 {
 
 /*Index*/
 .tars {
-    display: flex;
-    flex-direction:row;
-    gap: 5%;
-    margin: 5%
-
+  display: flex;
+  flex-direction:row;
+  margin: 5%;
+  gap: 30%;
+  display: flex;
+  justify-content: center;
 }
 
 .tar1 {
@@ -134,7 +140,6 @@ h2 {
   width: 35%;
   height: 35%;
   transition: transform 2s ease-in-out 0.4s;
-
 }
 
 .foto:hover {
@@ -146,29 +151,32 @@ h2 {
 
 /*Galeria*/
 .espacio {
-    display: flex;
-    gap: 25%;
-        margin: 40px 0px 10px 50px;
+  gap: 30%;
+  display: flex;
+  justify-content: center;
+
 
 }
 .forma {
-        background: orange;
-        height: 100px;
-        width: 100px;
-        animation: bote 0.7s ease-in-out infinite;
-        border-radius: 50%;
-        border: 3px solid black;
-      }
+  background: orange;
+  height: 100px;
+  width: 100px;
+  animation: bote 0.7s ease-in-out infinite;
+  border-radius: 50%;
+  border: 3px solid black;
+}
 
 
 .cuadro {
   width: 100px;
   height: 100px;
   border-radius: 0%;
-  animation: girar 3s linear infinite ;
   border: 3px solid black;
+  animation: girar 5s ease-out infinite ;
+  left: 0;
 
 }
+
 /*Declaración funciones*/
 @keyframes bote {
   0% {
@@ -219,57 +227,99 @@ h2 {
 .cuad1 {
   width: 100px;
   height: 100px;
-  border-radius: 0%;
-  animation: girar 3s linear infinite ;
-  border: 3px solid black;
+  border-radius: 10%;
+  border: 5px solid red;
+  position: absolute;
+  top: 0;
+  left: 0; 
 
 }
-@keyframes derecha {
+.cuad2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+  border: 5px solid blue;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+}
+.stage {
+  min-height: 150vh;
+  padding: 40vh 0;
+  position: relative;
+}
+.creascroll {
+  align-items: center;
+  display: flex;
+  font-size: 30px;
+  height: 450px;
+  justify-content: center;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  min-height: 40vh;
+  position: relative; 
+}
+/* Animacions amb keyframes */
+@keyframes aderecha {
   from { 
     transform: translateX(0) rotate(0deg); 
   }
   to { 
-    transform: translateX(calc(min(90vw, 800px) - var(--box))) rotate(360deg); 
+    transform: translateX(calc(min(90vw, 900px))) rotate(360deg); 
   }
 }
 
-@keyframes izquierda {
+@keyframes aizquierda {
   from { 
     transform: translateX(0) rotate(0deg); 
   }
   to { 
-    transform: translateX(calc(-1 * (min(90vw, 800px) - var(--box)))) rotate(-360deg); 
+    transform: translateX(calc(-1 * (min(90vw, 900px) ))) rotate(-360deg); 
   }
 }
-/* SCROLL-DRIVEN ANIMATIONS (Safari 26+, Chrome 115+) */
+
 @supports (animation-timeline: view()) {
   .cuad1 {
-    animation: derecha linear both;
+    animation: aderecha linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 100%;
   }
 
   .cuad2 {
-    animation: izquierda linear both;
+    animation: aizquierda linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 100%;
   }
 
+
 /*Guia estilos*/
 
+
+
+
+
 /*Adaptaciones*/
-@media (min-width: 768px) {
-  body {
-    margin: 0%;
-  }
-  .topnav {
+
+@media (max-width: 768px) {
+ body {
+    margin: 5%;
     max-width: 1264px;
-    margin: auto;
     text-align: center;
   }
 }
 
-@media (max-width: 768px) {
+
+@media (min-width: 768px) {
   body {
-    margin: 2%;
+    margin: auto;
+    max-width: 1264px;
+    text-align: center;
   }
+}

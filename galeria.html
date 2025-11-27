@@ -11,21 +11,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-<!--
-Pàgina 2 — “Animacions” (galeria.html)
-Objectiu: practicar @keyframes i variacions (direcció, delay, iteracions).
 
-Contingut mínim:
-
-Loader pur CSS (rotació, pulse o bounce).
-Peça animada principal: un bloc que combini transform + opacity + canvis de color en una seqüència de fotogrames (ex. bounceAndSpin).
-Scroll-reveal: 2–3 blocs que apareguin amb desplaçament fent servir animation-timeline: view() i animation-range.
-Fallback obligatori: @supports not (animation-timeline: view()) → aplica una animació o estat alternatiu.
-Control de repeticions: almenys una animació amb alternate i una amb infinite.
-
--->
 <h1 class="hero">Animaciones - RTL</h1>
-<nav class="topnav">        
+<nav class="topnav autocenter">        
         <div class="menu">
             <a href="index.html" class="colormenu">Indice</a>
             <a href="galeria.html" class="colormenu">Galeria</a>
@@ -33,16 +21,28 @@ Control de repeticions: almenys una animació amb alternate i una amb infinite.
         </div>
 </nav>
 <div>
-    <section class="espacio">
+    <div class="espacio">
         <div>
-            <h3>Objeto<br>votanto</h3>
+            <h3>Objeto votando</h3>
             <div class="forma transform"></div>
         </div>
         <div>
-            <h3>Cuadrado girando y <br>cambiando de dimensiones</h3>
+            <h3>Cuadrado girando</h3>
             <div class="cuadro"></div>
         </div>
-    </section>
+    </div>
+</div>
+<div class="creascroll">
+  Desliza hacia abajo
+</div>
+<div class="stage">
+  <div class="row">
+    <div class="track">
+      <div class="cuad1"></div>
+      <div class="cuad2"></div>
+    </div>
+    
+  </div>
 </div>
     
 </body>
