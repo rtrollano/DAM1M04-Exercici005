@@ -284,7 +284,6 @@ p {
     transform: translateX(calc(min(90vw, 900px))) rotate(360deg); 
   }
 }
-
 @keyframes aizquierda {
   from { 
     transform: translateX(0) rotate(0deg); 
@@ -310,8 +309,31 @@ p {
 
 /*Guia estilos*/
 
+.tablacol1 {
+  border: 2px solid cyan;
+  width:100px;
+  display: flex;
+  justify-content: left;
+  padding: 1%;
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+}
+.tablacol2 {
+  border: 2px solid cyan;
+  width:130px;
+  padding: 1%;
+  display: flex;
+  justify-content: left;
+  font-style: italic;
+  background-color: blue;
+  color: white;
+}
 
-
+.tabla {
+  display: flex;
+  margin-left: 5%;
+}
 
 
 /*Adaptaciones*/
