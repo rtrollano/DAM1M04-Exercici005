@@ -18,14 +18,36 @@
   'GRAD' 0,
   'opsz' 24
 }
+h1 {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 10px;
+}
+h2 {
+  font-family: "Grand Hotel", cursive;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 3;
+  letter-spacing: 10px;
+
+}
 h3 {
   font-family: "Edu VIC WA NT Hand Pre", cursive;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-style: normal;
+  font-weight: 250;
+  line-height: 2;
+  letter-spacing: 4px;
+
+}
+p {
+  font-family: "Playwrite AR", cursive;
+  font-optical-sizing: auto;
+  font-weight: 51;
   font-style: normal;
 }
-
-
 .topnav {
   display: flex;
   position: sticky;
@@ -68,15 +90,6 @@ h3 {
   color:white;
   letter-spacing: 3px;
   box-shadow: 10px 10px 10px black;
-}
-
-
-h2 {
-    margin: 5%;
-  font-family: "Edu VIC WA NT Hand Pre", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-  
 }
 
 /*Index*/
@@ -135,27 +148,20 @@ h2 {
     color: black;
     transition: ease-in-out 0.8s;
 }
-
 .foto {
   width: 35%;
   height: 35%;
   transition: transform 2s ease-in-out 0.4s;
 }
-
 .foto:hover {
-  
   transition: transform 1.8s ease-in-out 0.1s;
-  transform: translateX(70%) translateY(50%);
-
+  transform: translateX(70%);
 }
-
 /*Galeria*/
 .espacio {
   gap: 30%;
   display: flex;
   justify-content: center;
-
-
 }
 .forma {
   background: orange;
@@ -165,8 +171,6 @@ h2 {
   border-radius: 50%;
   border: 3px solid black;
 }
-
-
 .cuadro {
   width: 100px;
   height: 100px;
@@ -253,7 +257,7 @@ h2 {
   align-items: center;
   display: flex;
   font-size: 30px;
-  height: 450px;
+  height: 550px;
   justify-content: center;
 }
 
